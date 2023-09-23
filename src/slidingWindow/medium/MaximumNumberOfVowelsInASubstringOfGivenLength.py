@@ -1,4 +1,10 @@
 """
+
+* @author agond
+* @package main.slidingWindow.medium
+* @Date 23/09/2023
+* @Project PracticeDSA
+
 1456. Maximum Number of Vowels in a Substring of Given Length
 Hint
 Given a string s and an integer k, return the maximum number of vowel letters in any substring of s with length k.
@@ -29,7 +35,7 @@ s consists of lowercase English letters.
 """
 
 class Solution(object):
-    def maxVowels(self, s, k):
+    def max_vowels(self, s, k):
         """
         :type s: str
         :type k: int
@@ -70,11 +76,11 @@ class Solution(object):
 solution_instance = Solution()
 
 # Call the maxVowels method with the appropriate arguments
-result = solution_instance.maxVowels("abciiidef", 3)
+result = solution_instance.max_vowels("abciiidef", 3)
 assert result == 3, "should be equal to 3"
 
-result = solution_instance.maxVowels("aeiou", 2)
+result = solution_instance.max_vowels("aeiou", 2)
 assert result == 2, "should be equal to 3"
 
-result = solution_instance.maxVowels("leetcode", 3)
+result = solution_instance.max_vowels("leetcode", 3)
 assert result == 2, "should be equal to 2"
